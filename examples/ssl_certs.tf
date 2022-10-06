@@ -1,11 +1,9 @@
 module "ssl_cert" {
-  source  = "github.com/silksh-terraform-modules/terraform-aws-ssl-cert?ref=v0.0.1"
+  source  = "github.com/silksh-terraform-modules/terraform-aws-ssl-cert?ref=v0.0.2"
 
   tld = var.tld
 
   # is_private_zone = false
-
-  aws_region = var.aws_region
 
   domain =  "${var.tld}"
 

@@ -1,7 +1,3 @@
-provider "aws" {
-  region = var.aws_region
-}
-
 data "aws_route53_zone" "zone" {
   name         = var.tld
   private_zone = var.is_private_zone
