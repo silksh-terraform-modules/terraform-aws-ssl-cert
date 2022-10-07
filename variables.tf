@@ -1,7 +1,3 @@
-variable "aws_region" {
-  default = ""
-}
-
 variable "tld" {
   default = ""
 }
