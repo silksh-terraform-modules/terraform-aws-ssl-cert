@@ -11,6 +11,10 @@ resource "aws_acm_certificate" "cert" {
   lifecycle {
     create_before_destroy = true
   }
+
+  timeouts {
+    delete = "5m"
+  }
 }
 
 resource "aws_route53_record" "cert_valid" {
